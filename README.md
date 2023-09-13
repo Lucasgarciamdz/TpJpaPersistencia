@@ -1,3 +1,3 @@
 # TpJpaPersistencia
-Tp Jpa Persistencia Facundo Sampieri Legajo 47785
+Tp Jpa Persistencia Lucas Garcia
 
