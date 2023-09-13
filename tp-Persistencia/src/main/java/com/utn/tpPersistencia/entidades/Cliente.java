@@ -61,7 +61,7 @@ public class Cliente extends BaseEntidad{
             int j = 1;
             for (DetallePedido detalle : pedido.getDetallePedidos()){
                 System.out.println("---------- Detalle: " + j);
-                System.out.println("Producto: " + detalle.getProducto());
+                System.out.println("Producto: " + detalle.getProducto().getDenominacion());
                 System.out.println("Cantidad: " + detalle.getCantidad());
                 System.out.println("Subtotal: " + detalle.getSubtotal());
                 j++;
