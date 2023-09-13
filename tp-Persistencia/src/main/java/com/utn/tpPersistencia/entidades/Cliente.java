@@ -57,7 +57,6 @@ public class Cliente extends BaseEntidad{
             System.out.println("---------------------Pedido " + i + "---------------------");
             System.out.println("Fecha: " + pedido.getFecha());
             System.out.println("---------------------Detalle---------------------");
-            Hibernate.initialize(pedido.getDetallePedidos());
             int j = 1;
             for (DetallePedido detalle : pedido.getDetallePedidos()){
                 System.out.println("---------- Detalle: " + j);
@@ -66,7 +65,8 @@ public class Cliente extends BaseEntidad{
                 System.out.println("Subtotal: " + detalle.getSubtotal());
                 j++;
             }
-            System.out.println("Total: " + pedido.getTotal());
+            System.out.println("#################################");
+            System.out.println("TOTAL: " + pedido.getTotal());
             i++;
         }
     }
